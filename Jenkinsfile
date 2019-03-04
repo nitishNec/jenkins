@@ -11,7 +11,7 @@ pipeline {
 stages{
     stage ('Checkout') {
       steps {
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[ CredentialsID:'82a81d83-7f0c-42cd-9897-a5933427b37b', url: 'https://github.com/nitishNec/pipetest.git' ]]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[ CredentialsID:'82a81d83-7f0c-42cd-9897-a5933427b37b', url: 'https://github.com/nitishNec/ansible.git' ]]])
       }
     }
 
